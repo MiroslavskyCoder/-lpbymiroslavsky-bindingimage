@@ -9,16 +9,19 @@
   "scripts": {
     "rebuild": "node-gyp rebuild",
     "copy": "node ./scripts/copyBindingNapi",
+    "install": "node-pre-gyp install",
     "build": "npm run rebuild && npm run copy"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/MiroslavskyCoder/lpbymiroslavsky-bindingimage.git"
+    "url": "https://github.com/MiroslavskyCoder/lpbymiroslavsky-bindingimage.git"
   },
   "keywords": [],
   "author": "miroslavskyDev",
   "license": "ISC",
   "dependencies": {
+    "adm-zip": "^0.5.9",
+    "axios": "^0.27.2",
     "graceful-fs": "^4.2.10",
     "mkdirp": "^1.0.4",
     "path": "^0.12.7",
@@ -28,9 +31,10 @@
     "nan": "^2.16.0"
   },
   "gypfile": true,
-  "binary": {
+  "binary": { 
     "module_name": "BindingImage",
-    "module_path": "./napi/",
-    "host": "https://lp_bindingimage.module.miroslavskydev.com"
+    "module_path": "./napi",
+    "host": "https://github.com/MiroslavskyCoder/lpbymiroslavsky-bindingimage/releases/download/",
+    "remote_path": "v1.0.0"
   }
-}
+} 
