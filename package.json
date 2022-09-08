@@ -11,6 +11,10 @@
     "copy": "node ./scripts/copyBindingNapi",
     "build": "npm run rebuild && npm run copy"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/MiroslavskyCoder/lpbymiroslavsky-bindingimage.git"
+  },
   "keywords": [],
   "author": "miroslavskyDev",
   "license": "ISC",
