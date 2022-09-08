@@ -1,0 +1,32 @@
+{
+  "name": "@lpbymiroslavsky/bindingimage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "module": "lib/index.mjs",
+  "jsnext:main": "lib/index.mjs",
+  "typings": "./lib/index.d.ts",
+  "scripts": {
+    "rebuild": "node-gyp rebuild",
+    "copy": "node ./scripts/copyBindingNapi",
+    "build": "npm run rebuild && npm run copy"
+  },
+  "keywords": [],
+  "author": "miroslavskyDev",
+  "license": "ISC",
+  "dependencies": {
+    "graceful-fs": "^4.2.10",
+    "mkdirp": "^1.0.4",
+    "path": "^0.12.7",
+    "scan-dir-recursive": "^1.0.11"
+  },
+  "devDependencies": {
+    "nan": "^2.16.0"
+  },
+  "gypfile": true,
+  "binary": {
+    "module_name": "BindingImage",
+    "module_path": "./napi/",
+    "host": "https://lp_bindingimage.module.miroslavskydev.com"
+  }
+}
