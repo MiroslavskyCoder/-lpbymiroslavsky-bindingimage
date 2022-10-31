@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MiroslavskyCoder/lpbymiroslavsky-bindingimage.git"
+    "url": "https://github.com/MiroslavskyCoder/bymiroslavsky-bindingimage.git"
   },
   "keywords": [],
   "author": "miroslavskyDev",
@@ -34,7 +34,7 @@
   "binary": { 
     "module_name": "BindingImage",
     "module_path": "./napi",
-    "host": "https://github.com/MiroslavskyCoder/lpbymiroslavsky-bindingimage/releases/download/",
+    "host": "https://github.com/MiroslavskyCoder/bymiroslavsky-bindingimage/releases/download/",
     "remote_path": "v1.0.0"
   }
 } 
